@@ -40,7 +40,7 @@ public class UploadHandleController {
         User user = null;
         String src = "";
         // 得到上传头像的保存目录，将上传的文件存放于/resource/user目录下
-        ServletContext context = request.getServletContext();
+        ServletContext context = request.getSession().getServletContext();
         String savePath = context.getRealPath("/resource/homework");
 
         //从session中获取用户对象
