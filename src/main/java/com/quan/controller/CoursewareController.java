@@ -39,7 +39,7 @@ public class CoursewareController {
                lessonId = (Integer) request.getSession().getAttribute("lessonId");
            }
             // 得到上传课件的保存目录，将上传的文件存放于/resource/courseware目录下
-            ServletContext context = request.getServletContext();
+            ServletContext context = request.getSession().getServletContext();
             String savePath = context.getRealPath("/resource/courseware");
 
             File file = new File(savePath);

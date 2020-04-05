@@ -620,17 +620,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<form action="CoursewareController?method=upload" method="post" enctype="multipart/form-data">
 							<div class="modal-body">
 								<div class="form-group">
-								<label for="homeworkContent">课件名称<span class="required text-danger">*</span></label>
-								<input type="text" class="form-control" name="coursewareName">
+									<label for="homeworkContent">课件名称<span class="required text-danger">*</span></label>
+									<input type="text" class="form-control" name="coursewareName">
 								</div>
-							</div>
-							<div class="modal-footer">
 								<div class="form-group">
 									<label for="homeworkContent">文件<span class="required text-danger">*</span></label>
 									<input type="file" name="file1">
-									<hr/>
-									<input type="submit" value="上传" class="btn btn-primary">
 								</div>
+							</div>
+							<div class="modal-footer">
+								<input type="submit" value="上传" class="btn btn-primary">
 								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</form>

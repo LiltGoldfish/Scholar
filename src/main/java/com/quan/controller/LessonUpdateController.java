@@ -39,7 +39,7 @@ public class LessonUpdateController {
         Lesson lesson = lessonBiz.getById(lessonId);
 
         // 得到上传头像的保存目录，将上传的文件存放于/resource/user目录下
-        ServletContext context = request.getServletContext();
+        ServletContext context = request.getSession().getServletContext();
         String savePath = context.getRealPath("/resource/lesson");
 
         File file = new File(savePath);

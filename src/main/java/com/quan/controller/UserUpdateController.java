@@ -29,7 +29,7 @@ public class UserUpdateController {
     public void userUpdate(HttpServletRequest request,HttpServletResponse response, MultipartFile file1) throws IOException {
 
         // 得到上传头像的保存目录，将上传的文件存放于/resource/user目录下
-        ServletContext context = request.getServletContext();
+        ServletContext context = request.getSession().getServletContext();
         String savePath = context.getRealPath("/resource/user");
 
         UserBiz biz = ContextUtil.getContext().getBean("userBiz",UserBiz.class);
