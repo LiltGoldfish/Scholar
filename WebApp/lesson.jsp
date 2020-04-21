@@ -135,7 +135,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</c:when>
 							<c:otherwise>
 								<li>
-									<a href="index.jsp">登陆<span class="sr-only">(current)</span></a>
+									<a href="index.jsp">登录<span class="sr-only">(current)</span></a>
 								</li>
 							</c:otherwise>
 						</c:choose>
@@ -223,13 +223,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									</li>
 									<li>
 										<ul class="agileits-address-text">
-											<li><b>Department </b></li>
+											<li><b>Class </b></li>
 											<li>${lesson.major.department.departmentName}</li>
 										</ul>
 									</li>
 									<li>
 										<ul class="agileits-address-text">
-											<li><b>Major </b></li>
+											<li><b>Direction </b></li>
 											<li>${lesson.major.majorName}</li>
 										</ul>
 									</li>
@@ -237,11 +237,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</ul>
 							</div>
 							<div class="about-text">
-								<li><b>Introduction </b></li>
+								<li><b>Context </b></li>
 								<p style="line-height: 2em;">${lesson.lessonIntroduction}</p>
 							</div>
 							<div class="about-text">
-								<li><b>Announcement </b></li>
+								<li><b>Goal </b></li>
 								<p style="line-height: 2em;">${lesson.lessonAnnouncement}</p>
 							</div>
 
@@ -274,7 +274,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									
 									<li>
 										<ul class="agileits-address-text">
-											<li><b>Department </b></li>
+											<li><b>Class </b></li>
 											<li>
 												<select class="form-control" name="departmentId" id="departmentId">
 													<c:forEach items="${departmentListt}" var="departmentList">
@@ -293,7 +293,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									</li>
 									<li style="margin-bottom: 4em">
 										<ul class="agileits-address-text">
-											<li><b>Major </b></li>
+											<li><b>Direction </b></li>
 											<li>
 												<select class="form-control" name="majorId" id="majorId">
 								 					<c:forEach items="${majorList}" var="majorList">
@@ -314,12 +314,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</ul>
 							</div>
 							<div class="about-text">
-								<li><b>Introduction </b></li>
+								<li><b>Context </b></li>
 								<li><textarea name="lessonIntroduction" rows="5">${lesson.lessonIntroduction}</textarea></li>
 								<p style="line-height: 2em;"></p>
 							</div>
 							<div class="about-text">
-								<li><b>Announcement </b></li>
+								<li><b>Goal </b></li>
 								<li><textarea name="lessonAnnouncement" rows="5">${lesson.lessonAnnouncement}</textarea></li>
 								<p style="line-height: 2em;"></p>
 							</div>
